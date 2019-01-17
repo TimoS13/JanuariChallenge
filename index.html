@@ -1,10 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge - effe bikkelen op een mooie website</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css"
+          href="https://fonts.googleapis.com/css?family=Quicksand:400,700">
+
 </head>
 <body>
+<header id="headerText">
+    <h2>Challenge</h2>
+    <p>Effe bikkelen op een mooie website</p>
 
+
+</header>
+<div class="mobile-container">
+    <div class="topnav">
+        <a href="#home" class="active">menu</a>
+        <div  id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="">Archeologie</a>
+            <a href="">Backpacking</a>
+            <a href="">Bergbeklimmen</a>
+        </div>
+        <a href="javascript:void(0);" class="icon"
+           onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<div id="container">
+<article class="artiekelen">
+    <h4>Verder kijken</h4>
+    <div id="naamPlaatser"><p>Geplaatst op 11 januari 2019 door janjaap</p></div>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed imperdiet dapibus diam eget vehicula.
+        Proin nulla tellus, vehicula eu iaculis a, imperdiet vitae tellus.</h5>
+
+    <button class="button">Verder lezen</button>
+<p id="p1"></p>
+    <img src="img/iconfinder_Folder_-_Closed_256x256-32_172136.png" >
+    <p id="lenteberichten">In het nieuws</p>
+
+</article>
+
+<article class="artiekelen">
+    <h4>Backpacking</h4>
+    <div id="naamPlaatser"><p>Geplaatst op 11 januari 2019 door janjaap</p></div>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed imperdiet dapibus diam eget vehicula.
+        Proin nulla tellus, vehicula eu iaculis a, imperdiet vitae tellus.</h5>
+
+    <button class="button">Verder lezen</button>
+    <p id="p1"></p>
+    <img src="img/iconfinder_Folder_-_Closed_256x256-32_172136.png" >
+    <p id="lenteberichten">lentebericht</p>
+
+</article>
+
+<article class="artiekelen">
+    <h4>Wildcamperen</h4>
+    <div id="naamPlaatser"><p>Geplaatst op 11 januari 2019 door janjaap</p></div>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed imperdiet dapibus diam eget vehicula.
+        Proin nulla tellus, vehicula eu iaculis a, imperdiet vitae tellus.</h5>
+
+    <button class="button">Verder lezen</button>
+    <p id="p1"></p>
+    <img src="img/iconfinder_Folder_-_Closed_256x256-32_172136.png" >
+    <p id="lenteberichten">In het nieuws</p>
+
+</article>
+
+<article class="artiekelen">
+    <h4>Tis weer lente</h4>
+    <div id="naamPlaatser"><p>Geplaatst op 11 januari 2019 door janjaap</p></div>
+    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed imperdiet dapibus diam eget vehicula.
+        Proin nulla tellus, vehicula eu iaculis a, imperdiet vitae tellus.</h5>
+
+    <button class="button">Verder lezen</button>
+    <p id="p1"></p>
+    <img src="img/iconfinder_Folder_-_Closed_256x256-32_172136.png" >
+    <p id="lenteberichten">lentebericht</p>
+
+</article>
+
+    <div id="Laatste berichten">
+    <article class="artiekelen">
+        <h4>Laatste berichten</h4>
+        <a href="">Tis weer lente</a><br>
+        <a href="">Verder kijken</a><br>
+        <a href="">Backpacking</a><br>
+        <a href="">Wildcamperen</a>
+
+
+</article>
+</div>
+
+    <div id="Dieren">
+        <article class="artiekelen">
+            <h4>Dieren in het nieuws</h4>
+            <a href="">In het nieuws</a><br>
+            <a href="">lenteberichten</a>
+</article>
+    </div>
+
+</div>
+
+<footer>
+
+</footer>
 </body>
 </html>
