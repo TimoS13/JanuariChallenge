@@ -1,6 +1,17 @@
 *{
-    font-family: quicksand , sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
+.challengeLink{
+text-align: center;
+    color: black;
+    text-decoration: none;
+
+}
+.challengeLink:hover{
+    text-decoration: underline;
+}
+
+
 header#headerText{
     background-color: white;
     text-align: center;
@@ -57,13 +68,21 @@ body{
     padding-left: 5px;
 }
 
-#Dieren{
-
+.linksFooter{
+    color: red;
+    line-height: 2;
+    text-decoration: none;
+}
+.linksFooter:hover{
+    text-decoration: underline;
 }
 
+.mobile-container{
+    width: 100%;
+}
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: relative;
 }
 
