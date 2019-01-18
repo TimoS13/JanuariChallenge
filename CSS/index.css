@@ -1,7 +1,9 @@
 *{
     font-family: 'Quicksand', sans-serif;
 }
-
+#Hlinks{
+    display: none;
+}
 
 .challengeLink{
 text-align: center;
@@ -32,6 +34,15 @@ header#headerText{
 body{
     background-color: lightgray;
 
+}
+
+
+.links{
+    color: black;
+    text-decoration: none;
+}
+.links:hover{
+    text-decoration: underline;
 }
 
 
@@ -87,18 +98,18 @@ body{
     text-decoration: underline;
 }
 
-.mobile-container{
-    width: 100%;
-}
+
+
 .topnav {
     overflow: hidden;
-    background-color: black;
-    position: relative;
+    background-color: #333;
 }
 
-.topnav #myLinks {
+.topnav #myLinks{
     display: none;
+    background-color: black;
 }
+
 
 .topnav a {
     color: white;
@@ -110,14 +121,14 @@ body{
 
 .topnav a.icon {
     background: black;
-    display: block;
-    position: absolute;
+    display: inline-block;
+    float: left;
     right: 0;
     top: 0;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: darkgray;
     color: black;
 }
 
@@ -134,13 +145,13 @@ body{
     grid-area: Artiekel1;
 }
     #Artiekel2{
-        grid-area:Artiekel2 ;
+        grid-area:Artiekel2;
     }
     #Artiekel3{
-        grid-area:Artiekel3 ;
+        grid-area:Artiekel3;
     }
     #Artiekel4{
-        grid-area:Artiekel4 ;
+        grid-area:Artiekel4;
     }
     #Laatsteberichten{
         grid-area:Laatsteberichten;
@@ -148,14 +159,12 @@ body{
     #Dieren{
         grid-area:Dieren;
     }
-    #container{
+    #Artiekelen{
         display: grid;
-       grid-gap: 15px;
+       grid-gap: 10px;
         grid:
                  "Artiekel1 Artiekel2"1fr
-                 "Artiekel3 Artiekel4"1fr
-                 "Laatsteberichten Laatsteberichten"
-                 "Dieren Dieren"/
+                 "Artiekel3 Artiekel4"1fr/
                1fr 1fr
 
 
@@ -164,9 +173,9 @@ body{
 
 }
 @media all and (min-width: 900px){
-    .topnav {
-        display: none;
-    }
+    /*.topnav {*/
+        /*display: none;*/
+    /*}*/
     #Artiekel1{
         grid-area: Artiekel1;
     }
@@ -185,31 +194,61 @@ body{
     #Dieren{
         grid-area:Dieren;
     }
+    #Artiekelen{
+        display: grid;
+        grid-gap: 12px;
+        grid:
+        "Artiekel1 Artiekel2"1fr
+        "Artiekel3 Artiekel4"1fr/
+        1fr 1fr
+    }
     #container{
         display: grid;
         grid-gap: 15px;
         grid:
-                "Artiekel1 Artiekel2"1fr
-                "Artiekel3 Artiekel4"1fr
-                "Laatsteberichten Laatsteberichten"
-                "Dieren Dieren"/
-               1fr 1fr
-
+              "Artiekelen footer"1fr/
+                7fr 3fr
 
     }
 
-    #hlinks{
+
+    .topnav #myLinks, .topnav a{
+        width: 100%;
+        display: inline-block;
+        display: none;
+
+    }
+    .topnav a.icon{
+        display: none;
+    }
+    .topnav{
+        background-color: black;}
+    header#headerText{
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        padding-left: 13px;
+    }
+    #Hlinks{
         color: white;
+        display: inline-block;
         background-color: black;
-        text-decoration: none;
-        display: contents;
-        margin: auto;
+        width: 100%;
     }
-    #hlinks{
+    .linksH{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        margin-right: 7px;
+    }
+    .linksH:hover{
         text-decoration: underline;
     }
-
 }
-@media all and (max-width: 1100px) {
+@media all and (min-width: 1200px){
+    body{
+        width: 1200px;
+        margin: auto;
+    }
 
 }

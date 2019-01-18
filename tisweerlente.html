@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verder kijken - Challenge</title>
+    <link rel="stylesheet" type="text/css" href="CSS/VerderK.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+<div id="D&H">
+    <header id="headerText">
+        <a href="index.html" class="challengeLink"><h1>Challenge</h1></a>
+        <p>Effe bikkelen op een mooie website</p>
+
+        <div id="Hlinks">
+            <a href="index.html" class="linksH">Home</a>
+            <a href="Archeologie.html" class="linksH">Archeologie</a>
+            <a href="Backpacking.html" class="linksH">Backpacking</a>
+            <a href="Bergbeklimmen.html" class="linksH">Bergebeklimmen</a>
+        </div>
+
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="#home" class="active">menu</a>
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="Archeologie.html">Archeologie</a>
+                    <a href="Backpacking.html">Backpacking</a>
+                    <a href=Bergbeklimmen.html"">Bergbeklimmen</a>
+                </div>
+                <a href="javascript:void(0);" class="icon"
+                   onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </header>
+</div>
+<div id="container">
+    <div id="artiekel">
+        <article class="artiekelen">
+            <h3>Wildcamperen</h3>
+            <p>Geplaatst op 11 januari 2019 door Janjaap</p>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque dui, pellentesque sed urna non, laoreet<br><br>
+                consequat mauris. Fusce nec massa sit amet justo congue sollicitudin ut vel risus. Sed ante augue, tempor et
+                tristique ut, bibendum in felis. In lacinia varius velit eget semper. Vivamus tincidunt dolor vitae sapien<br><br>
+                condimentum, ac laoreet quam facilisis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque
+                dui, pellentesque sed urna non, laoreet consequat mauris. Fusce nec massa sit amet justo congue sollicitudin
+                ut vel risus. Sed ante augue, tempor et tristique ut, bibendum in felis. <img src="img/koe.jpg" id="foto"
+                > <p id="p1"></p>
+                <img src="img/iconfinder_Folder_-_Closed_256x256-32_172136.png" >
+                <p id="lenteberichten">lenteberichten</p></h2>
+
+        </article>
+    </div>
+
+    <div id="VorigB">
+        <article class="artiekelen">
+            <div id="Rpijltje">←Vorig bericht</div>
+            <h3 id="Rpijltjetext"><a href="Backpacking.html" id="Rtextlink">Backpacking</a></h3>
+        </article>
+    </div>
+
+    <div id="volgendB">
+        <article class="artiekelen">
+            <div id="pijltje">Volgend bericht →</div>
+            <h3 id="pijltjetext"><a href="" id="textLink"></a>Tis weer lente</h3>
+        </article>
+    </div>
+    <div>
+        <div id="Laatsteberichten">
+            <article class="artiekelen">
+                <h4>Laatste berichten</h4>
+                <a href="tisweerlente.html" class="linksFooter">Tis weer lente</a><br>
+                <a href="VerderK.html" class="linksFooter">Verder kijken</a><br>
+                <a href="Backpacking.html" class="linksFooter">Backpacking</a><br>
+                <a href="Wildcamperen.html" class="linksFooter">Wildcamperen</a>
+
+
+            </article>
+        </div>
+
+        <div id="Dieren">
+            <article class="artiekelen">
+                <h4>Dieren in het nieuws</h4>
+                <a href="" class="linksFooter">In het nieuws</a><br>
+                <a href="" class="linksFooter">lenteberichten</a>
+
+            </article>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

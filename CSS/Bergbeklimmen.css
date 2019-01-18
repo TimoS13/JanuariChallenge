@@ -116,6 +116,11 @@ body{
 .linksFooter:hover{
     text-decoration: underline;
 }
+#Zoekengij{
+    color: darkgray;
+    text-align: center;
+    opacity: 0.5;
+}
 @media all and (min-width: 500px) {
     .topnav #myLinks, .topnav a {
         width: 100%;
@@ -136,6 +141,7 @@ body{
         display: inline-block;
         text-align: left;
         width: 100%;
+        padding-left: 13px;
         padding-left: 13px;
     }
 

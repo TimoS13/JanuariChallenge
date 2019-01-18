@@ -1,6 +1,10 @@
 *{
     font-family: 'Quicksand', sans-serif;
 }
+#Hlinks{
+    display: none;
+}
+
 header#headerText{
     background-color: white;
     text-align: center;
@@ -107,4 +111,69 @@ body{
 }
 .linksFooter:hover{
     text-decoration: underline;
+}
+
+@media all and (min-width: 500px) {
+    .topnav #myLinks, .topnav a{
+        width: 100%;
+        display: inline-block;
+        display: none;
+
+    }
+    .topnav a.icon{
+        display: none;
+    }
+    .topnav{
+        background-color: black;}
+    header#headerText{
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        padding-left: 13px;
+    }
+    #Hlinks{
+        color: white;
+        display: inline-block;
+        background-color: black;
+        width: 100%;
+    }
+    .linksH{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        margin-right: 7px;
+    }
+    .linksH:hover{
+        text-decoration: underline;
+    }
+    #volgendB{
+        display: none;
+    }
+        .artiekelen{
+            grid-area: artiekelen;
+        }
+        #footers{
+            grid-area: footers;
+        }
+        #artiekel{
+            display: grid;
+            grid-gap: 13px;
+            grid:
+                    "artiekelen artiekelen"1fr/
+                1fr
+        }
+        #container{
+            display: grid;
+            grid-gap: 13px;
+            grid:
+                    "artiekelen footers"1fr/
+                7fr 3fr
+        }
+}
+@media all and (min-width: 1200px){
+    body{
+        width: 1200px;
+        margin: auto;
+    }
+
 }
