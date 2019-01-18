@@ -2,11 +2,6 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-#hlinks{
-  display: none;
-}
-
-
 
 .challengeLink{
 text-align: center;
@@ -169,8 +164,9 @@ body{
 
 }
 @media all and (min-width: 900px){
-    .topnav{
+    .topnav {
         display: none;
+    }
     #Artiekel1{
         grid-area: Artiekel1;
     }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildcamperen - Challenge</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Side.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+<div id="D&H">
+    <header id="headerText">
+        <a href="index.html" class="challengeLink"><h1>Challenge</h1></a>
+        <p>Effe bikkelen op een mooie website</p>
+
+        <div class="mobile-container">
+            <div class="topnav">
+                <a href="#home" class="active">menu</a>
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="">Archeologie</a>
+                    <a href="">Backpacking</a>
+                    <a href="">Bergbeklimmen</a>
+                </div>
+                <a href="javascript:void(0);" class="icon"
+                   onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </header>
+</div>
+<div>
+    <article class="artiekelen">
+        <h3>Wildcamperen</h3>
+        <p>Geplaatst op 11 januari 2019 door Janjaap</p>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque dui, pellentesque sed urna non, laoreet
+            consequat mauris. Fusce nec massa sit amet justo congue sollicitudin ut vel risus. Sed ante augue, tempor et
+            tristique ut, bibendum in felis. In lacinia varius velit eget semper. Vivamus tincidunt dolor vitae sapien
+            condimentum, ac laoreet quam facilisis.
+            <img src="img/tents2.jpg" id="foto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque
+            dui, pellentesque sed urna non, laoreet consequat mauris. Fusce nec massa sit amet justo congue sollicitudin
+            ut vel risus. Sed ante augue, tempor et tristique ut, bibendum in felis.</h2>
+
+    </article>
+</div>
+<div id="volgendB">
+<article class="artiekelen">
+    <div id="pijltje">Volgend bericht →</div>
+    <h3 id="pijltjetext"><a href="" id="textLink"></a>Backpacking</h3>
+</article>
+</div>
+<div id="Laatsteberichten">
+    <article class="artiekelen">
+        <h4>Laatste berichten</h4>
+        <a href="" class="linksFooter">Tis weer lente</a><br>
+        <a href="" class="linksFooter">Verder kijken</a><br>
+        <a href="" class="linksFooter">Backpacking</a><br>
+        <a href="" class="linksFooter">Wildcamperen</a>
+
+
+    </article>
+</div>
+
+<div id="Dieren">
+    <article class="artiekelen">
+        <h4>Dieren in het nieuws</h4>
+        <a href="" class="linksFooter">In het nieuws</a><br>
+        <a href="" class="linksFooter">lenteberichten</a>
+
+    </article>
+</div>
+
+</div>
+
+</body>
+</html>
