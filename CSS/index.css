@@ -1,6 +1,13 @@
 *{
     font-family: 'Quicksand', sans-serif;
 }
+
+#hlinks{
+  display: none;
+}
+
+
+
 .challengeLink{
 text-align: center;
     color: black;
@@ -10,7 +17,15 @@ text-align: center;
 .challengeLink:hover{
     text-decoration: underline;
 }
-
+.artiekelLink{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+.artiekelLink:hover{
+    text-decoration: underline;
+}
 
 header#headerText{
     background-color: white;
@@ -119,10 +134,84 @@ body{
 
 
 
-@media all and (min-width:400px){
+@media all and (min-width:500px){
+    #Artiekel1{
+    grid-area: Artiekel1;
+}
+    #Artiekel2{
+        grid-area:Artiekel2 ;
+    }
+    #Artiekel3{
+        grid-area:Artiekel3 ;
+    }
+    #Artiekel4{
+        grid-area:Artiekel4 ;
+    }
+    #Laatsteberichten{
+        grid-area:Laatsteberichten;
+    }
+    #Dieren{
+        grid-area:Dieren;
+    }
+    #container{
+        display: grid;
+       grid-gap: 15px;
+        grid:
+                 "Artiekel1 Artiekel2"1fr
+                 "Artiekel3 Artiekel4"1fr
+                 "Laatsteberichten Laatsteberichten"
+                 "Dieren Dieren"/
+               1fr 1fr
+
+
+    }
+
 
 }
 @media all and (min-width: 900px){
+    .topnav{
+        display: none;
+    #Artiekel1{
+        grid-area: Artiekel1;
+    }
+    #Artiekel2{
+        grid-area:Artiekel2 ;
+    }
+    #Artiekel3{
+        grid-area:Artiekel3 ;
+    }
+    #Artiekel4{
+        grid-area:Artiekel4 ;
+    }
+    #Laatsteberichten{
+        grid-area:Laatsteberichten;
+    }
+    #Dieren{
+        grid-area:Dieren;
+    }
+    #container{
+        display: grid;
+        grid-gap: 15px;
+        grid:
+                "Artiekel1 Artiekel2"1fr
+                "Artiekel3 Artiekel4"1fr
+                "Laatsteberichten Laatsteberichten"
+                "Dieren Dieren"/
+               1fr 1fr
+
+
+    }
+
+    #hlinks{
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        display: contents;
+        margin: auto;
+    }
+    #hlinks{
+        text-decoration: underline;
+    }
 
 }
 @media all and (max-width: 1100px) {
